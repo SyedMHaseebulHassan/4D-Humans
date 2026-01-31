@@ -11,8 +11,11 @@ def download_models(folder=CACHE_DIR_4DHUMANS):
     """
     import os
     os.makedirs(folder, exist_ok=True)
+    # download_files = {
+    #     "hmr2_data.tar.gz"      : ["https://people.eecs.berkeley.edu/~jathushan/projects/4dhumans/hmr2_data.tar.gz", folder],
+    # }
     download_files = {
-        "hmr2_data.tar.gz"      : ["https://people.eecs.berkeley.edu/~jathushan/projects/4dhumans/hmr2_data.tar.gz", folder],
+        "models.tar.gz"      : ["https://people.eecs.berkeley.edu/~kanazawa/cachedir/hmr/models.tar.gz", folder],
     }
 
     for file_name, url in download_files.items():
